@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="st1.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#videos a').each(function() {
+        var data = $(this).attr('data');
+        $(this).append('<img src="http://img.youtube.com/vi/'+data+'/maxresdefault.jpg" />');
+    });
+
+    $('#videos a').click(function() {
+        var data = $(this).attr('data');
+        $('#loader').append('<iframe src="https://www.youtube.com/embed/'+data+'" frameborder="0" allowfullscreen></iframe>');
+        $('#overlay').fadeIn(250);
+    });
+
+    $('#close').click(function() {
+        $('#overlay').fadeOut(250,function() {
+            $('#loader').html('');
+        });
+    });
+});
+</script>
+</head>
+<body>
+<div class="header">
+  <center><h1>VIDEO GALLERY</h1></center>
+</div>
+	  <div><nav id="main">
+    
+      <li><a class="active" href="#">MUSIC</a></li></ul>
+      <li><a href="#">Home</a></li></ul>
+      <li><a href="#">playlist</a></li>
+	  <li><a href="#">search</a></li></ul>
+      
+	  <li><a href="#">trending</a></li></ul>
+      
+      
+    </ul>
+  </nav>
+  </div>
+<div id="videos">
+
+    
+    <a data="7dTesnDsceE"></a>
+    <a data="Zo4WsI14s3g"></a>
+    <a data="hxjABEwwrTc"></a>
+	<a data="mEMHF5W4zlY"></a>
+</div>
+
+<div id="overlay">
+    <div class="modal">
+        <div id="close">X</div>
+        <div id="loader"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.signup-page{
+width:360px;
+padding:8% 0 0;
+margin:auto;
+border-radius: 4px;
+}
+
+.form{
+position:relative;
+background:rgba(255, 99, 71, 0.5);
+max-width:500px;
+margin:0 auto 100px;
+padding:45px;
+text-align:center;
+border-radius: 10px;
+}
+.form input{
+ width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+background-color:#ffffff;
+color:black;
+ border-radius:5px;
+
+
+}
+.body{
+background-color:#3CBC8D;
+font-family:"roboto",sans-serif;
+
+}
+body{
+background-image:url("yoo.jpg");
+opacity:0.99;
+background-size: cover;
+background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+ 
+ 
+}
+.btn{
+color:black;
+border-radius:10px;}
